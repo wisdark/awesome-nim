@@ -1,4 +1,4 @@
-<p align="center"><img src="asset/logo.svg" width="400"/></p>
+<!-- <p align="center"><img src="asset/logo.svg" width="400"/></p> -->
 
 # Awesome Nim [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
@@ -67,6 +67,7 @@
 - [Development Tools](#development-tools)
     - [Binding Generators](#binding-generators)
     - [Command-Line Interface Automation](#command-line-interface-automation)
+- [Standard Libraries](#standard-libraries)
 - [Resources](#resources)
     - [Books](#books)
     - [Blogs](#blogs)
@@ -93,6 +94,7 @@
 - [Nimble](https://github.com/nim-lang/nimble) - Nimble can be used as a build system.
 - [nimph](https://github.com/disruptek/nimph) - Nim package hierarchy manager from the future.
 - [nimby](https://github.com/treeform/nimby) - Nimby is a very simple and unofficial package manager for Nim.
+- [nsis](https://github.com/nim-libs/nsis) - Nim programming language setup tool.
 
 
 ## System API
@@ -213,7 +215,7 @@
 ## Deep Learning
 
 - [Arraymancer](https://github.com/mratsim/Arraymancer) - A fast, ergonomic and portable tensor library in Nim with a deep learning focus for CPU, GPU, OpenCL and embedded devices.
-- [NimTorch](https://gitlab.fragcolor.xyz/fragcolor/nimtorch) - PyTorch - Python + Nim. A Nim front-end to PyTorch's native backend, combining Nim's speed, productivity and portability with PyTorch's latest implementations.
+- [NimTorch](https://github.com/sinkingsugar/nimtorch) - PyTorch - Python + Nim. A Nim front-end to PyTorch's native backend, combining Nim's speed, productivity and portability with PyTorch's latest implementations.
 
 
 ## Design
@@ -284,7 +286,7 @@
 ## Plot
 
 - [ggplotnim](https://github.com/Vindaar/ggplotnim) - A port of ggplot2 for Nim.
-- [nim-plotly](https://github.com/brentp/nim-plotly) - The plotting library for Nim.
+- [nim-plotly](https://github.com/SciNim/nim-plotly) - The plotting library for Nim.
 - [graph](https://github.com/stisa/graph) - A basic plotting libiary in Nim.
 - [npainter](https://github.com/mrgaturus/npainter) - Semi GPU-Accelerated painting software written in Nim.
 - [pixie](https://github.com/treeform/pixie) - Full-featured 2d graphics library for Nim.
@@ -424,6 +426,7 @@
 - [httpbeast](https://github.com/dom96/httpbeast) - A highly performant, multi-threaded HTTP 1.1 server written in Nim.
 - [GuildenStern](https://github.com/olliNiinivaara/GuildenStern) - Genuinely multithreading integrated HTTP/1.1 + WebSocket v13 Server for POSIX-compliant OSes.
 - [netkit](https://github.com/iocrate/netkit) - Out-of-the-box, stable and secure network facilities and utilities written by pure Nim.
+- [jshttp2](https://juancarlospaco.github.io/nodejs/nodejs/jshttp2) - Async HTTPS 2.0 web server.
 
 
 ### Websocket
@@ -431,6 +434,7 @@
 - [websocket.nim](https://github.com/niv/websocket.nim) - Websockets for Nim.
 - [ws](https://github.com/treeform/ws) - Simple WebSocket library for Nim.
 - [news](https://github.com/Tormund/news) - Nim easy web socket.
+- [jswebsockets](https://juancarlospaco.github.io/nodejs/nodejs/jswebsockets) - WebSockets optimized for JavaScript targets.
 
 
 ### Web Frameworks
@@ -479,6 +483,16 @@
 - [docopt.nim](https://github.com/docopt/docopt.nim) - Command-line args parser.
 - [nim-argparse](https://github.com/iffy/nim-argparse) - Argument parsing for Nim.
 - [clapfn](https://github.com/oliversandli/clapfn) - Argument parsing similar to Python's argparse.
+- [cliche](https://github.com/juancarlospaco/cliche) - AutoMagic CLI argument parsing is so Cliché.
+
+
+## Standard Libraries
+
+Nim provides unique features for seamless and transparent interoperability with other technologies,
+some users found useful to make other standard libraries usable from Nim.
+
+- [cpython](https://github.com/juancarlospaco/cpython) - Python standard library for Nim.
+- [Node.js](https://github.com/juancarlospaco/nodejs) - Node.js standard library for Nim.
 
 
 ## Resources
@@ -509,7 +523,7 @@
 - [The Nim IRC channel](http://webchat.freenode.net/?channels=nim)
 - [The Nim Gitter channel](https://gitter.im/nim-lang/Nim)
 - [The Nim Discord channel](https://discord.gg/ptW3Rb3)
-- [The Nim mailing list](http://www.freelists.org/list/nim-dev)
+- [The Nim mailing list (forum archive)](https://www.mail-archive.com/nim-general@lists.nim-lang.org/)
 - [The Nim SubReddit](http://reddit.com/r/nim)
 - [The Nim Telegram](https://t.me/nim_lang)
 - [The Nim Telegram in Spanish](https://t.me/NimArgentina)
