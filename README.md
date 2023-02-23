@@ -17,6 +17,7 @@
   - [Contracts](#contracts)
   - [Object-Oriented Programming](#object-oriented-programming)
   - [Functional Programming](#functional-programming)
+  - [Pattern Matching](#pattern-matching)
   - [Iteration](#iteration)
   - [Macros](#macros)
 - [Operating System](#operating-system)
@@ -38,7 +39,7 @@
   - [Parsing](#parsing)
   - [Serialization](#serialization)
 - [Text](#text)
-  - [Pattern Matching](#pattern-matching)
+  - [String Types](#string-types)
   - [Translation](#translation)
   - [Markdown](#markdown)
 - [Multimedia](#multimedia)
@@ -89,6 +90,7 @@
   - [Build Systems / Package Management](#build-systems--package-management)
   - [Logging](#logging)
   - [Testing](#testing)
+  - [Fuzzing](#fuzzing)
   - [Benchmarking](#benchmarking)
   - [Command-Line Interface Automation](#command-line-interface-automation)
 - [Resources](#resources)
@@ -123,7 +125,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 
 
 ### Editors
-
+- [moe](https://github.com/fox0430/moe) - A vim-like editor made with Nim, also supports C, Rust, Javascript, etc.
 - [Nim Playground](https://play.nim-lang.org/) - Code and run Nim online.
 - [DoongJohn's Nim playground](https://doongjohn.github.io/nim-playground/) - An alternative implementation of the Nim playground.
 
@@ -142,6 +144,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [taskpools](https://github.com/status-im/nim-taskpools) - Lightweight, energy-efficient, easily auditable threadpools.
 - [shared](https://github.com/genotrance/shared) - A Nim library for shared types.
 - [synthesis](https://github.com/mratsim/Synthesis) - A compiletime, procedure-based, low-overhead, no-allocation, state-machine generator optimized for communicating processes and threads.
+- [sync](https://github.com/planetis-m/sync) - Useful synchronization primitives.
 
 
 ### Error Handling
@@ -161,7 +164,6 @@ Nim provides unique features for seamless and transparent interoperability with 
 
 - [oop_utils](https://github.com/bluenote10/oop_utils) - Nim macros for building OOP class hierarchies.
 - [interfaced](https://github.com/andreaferretti/interfaced) - Interfaces for Nim.
-- [protocoled](https://github.com/b3liever/protocoled) - Contains the protocol macro for easily implementing interfaces in Nim.
 - [traitor](https://github.com/beef331/traitor) - A macro heavy trait library made from boredom.
 - [classy](https://github.com/nigredo-tori/classy) - Haskell-style typeclasses for Nim.
 
@@ -170,8 +172,20 @@ Nim provides unique features for seamless and transparent interoperability with 
 
 - [cascade](https://github.com/citycide/cascade) - Method & assignment cascades for Nim, inspired by Smalltalk & Dart.
 - [nimfp](https://github.com/vegansk/nimfp) - Nim functional programming library.
+- [nim-pipexp](https://github.com/ShalokShalom/nim-pipexp) - Expression-based pipe operators with placeholder argument for Nim.
 - [pipe](https://github.com/5paceToast/pipe) - Pipe operator for Nim, as seen in functional languages.
 - [zero-functional](https://github.com/zero-functional/zero-functional) - A library providing (almost) zero-cost chaining for functional abstractions in Nim.
+
+
+### Pattern Matching
+
+- [regex](https://github.com/nitely/nim-regex) - Pure Nim regex engine with linear time match.
+- [npeg](https://github.com/zevv/npeg) - PEGs for Nim, another take.
+- [patty](https://github.com/andreaferretti/patty) - A pattern matching library for Nim.
+- [gara](https://github.com/alehander42/gara) - Macro-based pattern matching library.
+- [glob](https://github.com/citycide/glob) - Pure library for matching file paths against Unix style glob patterns.
+- [ast_pattern_match](https://github.com/krux02/ast-pattern-matching) - A library to do pattern matching on the AST.
+- [awk](https://github.com/greencardamom/awk) - A library of awk functions in Nim.
 
 
 ### Iteration
@@ -214,6 +228,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 ### Processes
 
 - [psutil](https://github.com/johnscillieri/psutil-nim) - A port of Python's psutil to Nim.
+- [shell](https://github.com/Vindaar/shell) - A mini Nim DSL to execute shell commands more conveniently.
 - [schedules](https://github.com/soasme/nim-schedules) - A Nim scheduler library that lets you kick off jobs at regular intervals.
 - [daemon](https://github.com/status-im/nim-daemon) - Cross-platform process daemonization library for the Nim language.
 
@@ -237,7 +252,6 @@ Nim provides unique features for seamless and transparent interoperability with 
 
 - [nimcr](https://github.com/PMunch/nimcr) - Running Nim code with Shebangs.
 - [nimr](https://github.com/Jeff-Ciesielski/nimr) - Run Nim programs like scripts.
-- [shell](https://github.com/Vindaar/shell) - A mini Nim DSL to execute shell commands more conveniently.
 
 
 ## Hardware
@@ -320,6 +334,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 
 - [parsetoml](https://github.com/NimParsers/parsetoml) - A Nim library to parse TOML files.
 - [NimYAML](https://github.com/flyx/NimYAML) - YAML implementation for Nim.
+- [Binarylang](https://github.com/sealmove/binarylang) - Extensible Nim DSL for creating binary parsers/encoders in a symmetric fashion.
 
 
 ### Serialization
@@ -333,19 +348,15 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [protobuf-nim](https://github.com/PMunch/protobuf-nim) - Protobuf implementation in pure Nim that leverages the power of the macro system to not depend on any external tools.
 - [flatty](https://github.com/treeform/flatty) - Tools and serializer for plain flat binary files.
 - [nesm](https://xomachine.gitlab.io/NESM/) - NESM is a tool that generates serialization and deserialization code for a given object.
+- [bingo](https://github.com/planetis-m/bingo) - Binary serialization framework for Nim.
 
 
 ## Text
 
-### Pattern Matching
+### String Types
 
-- [regex](https://github.com/nitely/nim-regex) - Pure Nim regex engine with linear time match.
-- [npeg](https://github.com/zevv/npeg) - PEGs for Nim, another take.
-- [patty](https://github.com/andreaferretti/patty) - A pattern matching library for Nim.
-- [gara](https://github.com/alehander42/gara) - Macro-based pattern matching library.
-- [glob](https://github.com/citycide/glob) - Pure library for matching file paths against Unix style glob patterns.
-- [ast_pattern_match](https://github.com/krux02/ast-pattern-matching) - A library to do pattern matching on the AST.
-- [awk](https://github.com/greencardamom/awk) - A library of awk functions in Nim.
+- [ssostrings](https://github.com/planetis-m/ssostrings) - Small String Optimized (SSO) string implementation.
+- [cowstrings](https://github.com/planetis-m/cowstrings) - Copy-On-Write string implementation according to nim-lang/RFCs#221.
 
 
 ### Translation
@@ -581,6 +592,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [httpbeast](https://github.com/dom96/httpbeast) - A highly performant, multi-threaded HTTP 1.1 server ([top 10 in FrameworkBenchmarks](https://www.techempower.com/benchmarks/#section=data-r18&test=json)).
 - [httpx](https://github.com/ringabout/httpx) - Cross platform web server for Nim. A fork of httpbeast adding Windows support.
 - [GuildenStern](https://github.com/olliNiinivaara/GuildenStern) - Genuinely multithreading integrated HTTP/1.1 + WebSocket v13 Server for POSIX-compliant OSes.
+- [Mummy](https://github.com/guzba/mummy) - A multi-threaded HTTP 1.1 server with first-class support for WebSockets.
 - [netkit](https://github.com/iocrate/netkit) - Out-of-the-box, stable and secure network facilities and utilities written in pure Nim.
 - [jshttp2](https://juancarlospaco.github.io/nodejs/nodejs/jshttp2) - Async HTTPS 2.0 web server.
 
@@ -628,19 +640,19 @@ Nim provides unique features for seamless and transparent interoperability with 
 
 - [nico](https://github.com/ftsf/nico) - Nim Game Framework based on Pico-8.
 - [natu](https://github.com/exelotl/natu) - Toolkit for writing Game Boy Advance games in Nim.
-- [nodesnim](https://github.com/ethosa/nodesnim) - Simple 2D game framework based on SDL2 and OpenGL.
+- [naylib](https://github.com/planetis-m/naylib) - safe Raylib wrapper.
 - [c4](https://github.com/c0ntribut0r/cat-400) - Modular and extensible 2D and 3D game framework for Nim.
 - [paranim](https://github.com/paranim/paranim) - A game library based around carefully chosen abstractions.
 
 
 ### Game Engines
 
+- [NimForUE](https://github.com/jmgomez/NimForUE) - Nim plugin for UE5 with native performance, hot reloading and full interop that sits between C++ and Blueprints.
 - [nimgame2](https://github.com/Vladar4/nimgame2) - A simple 2D game engine for Nim.
 - [norx](https://github.com/tankfeud/norx) - A complete wrapper of the ORX 2.5D cross platform game engine library.
 - [godot-nim](https://github.com/pragmagic/godot-nim) - Nim bindings for Godot Engine.
-- [rapid](https://github.com/liquid600pgm/rapid) - A game engine written in Nim, optimized for rapid game development and prototyping.
 - [rod](https://github.com/yglukhov/rod) - Cross-platform 2D and 3D game engine.
-- [frag](https://github.com/zacharycarter/frag) - 3D Game Engine.
+- [frag](https://github.com/Tail-Wag-Games/frag) - Cross-platform 2D/3D game engine.
 
 
 ### Rules Engines
@@ -650,6 +662,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 
 
 ## Development Tools
+
 
 ### Editor Integration
 
@@ -701,6 +714,12 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [einheit](https://github.com/jyapayne/einheit) - A Nim unit testing library inspired by Python's unit tests.
 - [asynctest](https://github.com/status-im/asynctest) - Complements the standard unittest module in Nim to allow testing of asynchronous code.
 - [unittest2](https://github.com/status-im/nim-unittest2) - Fork of the "unittest" Nim module focusing on parallel test execution, test-level scoping and strict exception handling.
+
+
+### Fuzzing
+
+- [drchaos](https://github.com/status-im/nim-drchaos) - A powerful and easy-to-use fuzzing framework in Nim for C/C++/Obj-C targets.
+- [libfuzzer](https://github.com/planetis-m/libfuzzer) - LibFuzzer's interface bindings.
 
 
 ### Benchmarking
@@ -755,6 +774,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [The Nim subreddit](http://reddit.com/r/nim)
 - [The Nim Telegram](https://t.me/nim_lang)
 - [The Nim Telegram in Spanish](https://t.me/NimArgentina)
+- [The Nim Matrix room](https://matrix.to/#/#nim-lang:matrix.org)
 
 
 ### Tutorials
@@ -767,6 +787,8 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [Nim on Rosetta Code](https://rosettacode.org/wiki/Category:Nim) - Thousands of solutions for various tasks using Nim.
 - [Nim Memory](http://zevv.nl/nim-memory/) - A small tutorial explaining how Nim stores data in memory.
 - [Nim ARC](http://zevv.nl/nim-memory/nim-arc.html) - A friendly explanation of ARC and its implications for the programmer.
+- [nimNx](https://github.com/dkgitdev/nimNx) - A Nintendo Switch Homebrew example project, written in Nim.
+- [nimNxStatic](https://github.com/dkgitdev/nimNxStatic) - A static library example aiming to help integrate Nim code into the current Homebrew C projects for Nintendo Switch 
 
 
 ### Videos
@@ -784,4 +806,6 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [zachary_carter twitch](https://www.twitch.tv/zachary_carter) - The live broadcast regarding Nim language.
 
 ---
+
+### Footnotes
 *Awesome-Nim logo is based on the "Nim Crown" logo by Joseph Wecker, used with permission from the Nim project.*
