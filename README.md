@@ -38,6 +38,7 @@
   - [Data Processing](#data-processing)
   - [Parsing](#parsing)
   - [Serialization](#serialization)
+  - [Standards](#standards)
 - [Text](#text)
   - [String Types](#string-types)
   - [Translation](#translation)
@@ -73,8 +74,10 @@
     - [QUIC](#quic)
     - [Websockets](#websockets)
     - [Messaging](#messaging)
+    - [Multicast](#multicast)
   - [HTML Parsers](#html-parsers)
   - [HTTP Servers](#http-servers)
+  - [Gemini Servers](#gemini-servers)
   - [Frameworks](#frameworks)
   - [Template Engines](#template-engines)
   - [Authentication](#authentication)
@@ -139,6 +142,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 
 ### Threading
 
+- [malebolgia](https://github.com/Araq/malebolgia) - A powerful library in Nim that simplifies the implementation of concurrent and parallel programming.
 - [weave](https://github.com/mratsim/weave) - A state-of-the-art multithreading runtime: message-passing based, fast, scalable, ultra-low overhead.
 - [timerpool](https://github.com/mikra01/timerpool) - Threadsafe timerpool implementation for event purposes.
 - [taskpools](https://github.com/status-im/nim-taskpools) - Lightweight, energy-efficient, easily auditable threadpools.
@@ -165,6 +169,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [oop_utils](https://github.com/bluenote10/oop_utils) - Nim macros for building OOP class hierarchies.
 - [interfaced](https://github.com/andreaferretti/interfaced) - Interfaces for Nim.
 - [traitor](https://github.com/beef331/traitor) - A macro heavy trait library made from boredom.
+- [classes](https://github.com/jjv360/nim-classes) - Python-style class system for Nim.
 - [classy](https://github.com/nigredo-tori/classy) - Haskell-style typeclasses for Nim.
 
 
@@ -350,6 +355,9 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [nesm](https://xomachine.gitlab.io/NESM/) - NESM is a tool that generates serialization and deserialization code for a given object.
 - [bingo](https://github.com/planetis-m/bingo) - Binary serialization framework for Nim.
 
+### Standards
+
+- [isocodes](https://github.com/kraptor/isocodes) - ISO codes for Nim (ISO 3166-1, ISO 3166-2, ISO 3166-3, ISO 15924, ISO 15924, ISO 639-2, ISO 639-5)
 
 ## Text
 
@@ -379,6 +387,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [omni](https://github.com/vitreo12/omni) - A DSL for low-level audio programming.
 - [wave](https://github.com/jiro4989/wave) - A tiny WAV sound module.
 - [parasound](https://github.com/paranim/parasound) - A library to provide Nim bindings for miniaudio and dr_wav.
+- [jacket](https://github.com/SpotlightKid/jacket) - A Nim wrapper for the libjack C library to write clients for the JACK audio server. 
 
 
 ### Images
@@ -497,9 +506,12 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [nimx](https://github.com/yglukhov/nimx) - Desktop, Mobile & Web GUI framework in Nim.
 - [NiGui](https://github.com/trustable-code/NiGui) - A cross-platform, desktop GUI toolkit.
 - [ui](https://github.com/nim-lang/ui) - Wrapper for libui. Beginnings of what might become Nim's official UI library.
+- [uing](https://github.com/neroist/uing) - Wrapper & bindings for libui-ng, an updated and maintained fork of libui.
 - [iup](https://github.com/nim-lang/iup) - Wrapper for IUP. Beginnings of what might become Nim's official UI library.
 - [SDL2](https://github.com/nim-lang/sdl2) - Official wrapper for SDL 2.x.
 - [SDL2](https://github.com/Vladar4/sdl2_nim) - A wrapper for SDL 2.
+- [Owlkettle](https://github.com/can-lehmann/owlkettle) - Declarative user interface framework based on GTK.
+- [libtray](https://github.com/neroist/libtray) - Nim wrapper for Tray (dmikushin's fork), a library to create system tray/menu bar icon with a popup menu.
 
 
 #### Windows
@@ -520,6 +532,8 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [webgui](https://github.com/juancarlospaco/webgui) - Web technologies based cross-platform GUI Framework with a dark theme.
 - [fidget](https://github.com/treeform/fidget) - Figma based UI library for Nim, with HTML and OpenGL backends.
 - [nsciter](https://github.com/Yardanico/nsciter) - High-level and low-level Nim wrapper for https://sciter.com.
+- [webview](https://github.com/neroist/webview) - Nim bindings and wrapper for Webview.
+- [webui](https://github.com/webui-dev/nim-webui) - Nim bindings and wrapper for WebUI.
 
 
 #### Lightweight
@@ -551,6 +565,8 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [webdavclient](https://github.com/beshrkayali/webdavclient) - WebDAV client for Nim.
 - [stomp](https://github.com/subsetpark/nim-stomp) - A pure-Nim client library for interacting with Stomp compliant message brokers.
 - [presto](https://github.com/status-im/nim-presto) - An efficient REST API framework.
+- [gemini](https://github.com/benob/gemini) - Building blocks for creating Gemini servers and clients.
+- [yahttp](https://github.com/mishankov/yahttp) - Awesome simple HTTP client.
 
 
 #### DNS
@@ -582,6 +598,11 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [status](https://github.com/status-im/nim-status) - Nim implementation of the Status protocol.
 
 
+#### Multicast
+
+- [nimMulticast](https://github.com/enthus1ast/nimMulticast) - UDP Multicast made simple. 
+
+
 ### HTML Parsers
 
 - [Nimquery](https://github.com/GULPF/nimquery) - Library for querying HTML using CSS selectors, like JavaScript's `document.querySelector`.
@@ -596,6 +617,10 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [netkit](https://github.com/iocrate/netkit) - Out-of-the-box, stable and secure network facilities and utilities written in pure Nim.
 - [jshttp2](https://juancarlospaco.github.io/nodejs/nodejs/jshttp2) - Async HTTPS 2.0 web server.
 
+### Gemini Servers
+
+- [Geminim](https://github.com/ardek66/geminim) - A Gemini server.
+- [Nemini](https://codeberg.org/pswilde/Nemini) - A very simple Gemini server for serving static gemtext files.
 
 ### Frameworks
 
@@ -604,7 +629,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [whip](https://github.com/mattaylor/whip) - Simple and fast HTTP server for Nim based on httpbeast and nest for high performance routing.
 - [basolato](https://github.com/itsumura-h/nim-basolato) - A fullstack web framework for Nim based on Jester.
 - [karax](https://github.com/karaxnim/karax) - A framework for developing single page applications in Nim.
-- [akane](https://github.com/Ethosa/akane) - An asynchronous web framework.
+- [happyx](https://github.com/HapticX/happyx) - A macro-oriented full stack asynchronous web framework written in Nim.
 - [scorper](https://github.com/bung87/scorper) - A micro and elegant web framework written in Nim.
 - [starlight](https://github.com/planety/starlight) - Flask-like web framework written in Nim.
 - [rosencrantz](https://github.com/andreaferretti/rosencrantz) - DSL to write web servers, inspired by Spray and its successor Akka HTTP.
@@ -613,11 +638,13 @@ Nim provides unique features for seamless and transparent interoperability with 
 
 ### Template Engines
 
+- [Nim Source Code filters](https://nim-lang.org/docs/filters.html) - Nim's powerful built-in feature which can be used as a templating system or a preprocessor. 
 - [smalte](https://github.com/roquie/smalte) - It is a dead simple and lightweight template engine. Specially designed for configure application before start in Docker.
 - [html-dsl](https://github.com/juancarlospaco/nim-html-dsl) - Nim HTML DSL.
 - [templates](https://github.com/onionhammer/nim-templates) - A simple string templating library for Nim.
 - [nimja](https://github.com/enthus1ast/nimja) - Typed and compiled template engine inspired by jinja2, twig and onionhammer/nim-templates for Nim.
 - [mustache](https://github.com/soasme/nim-mustache) - A full implementation of v1.2.1 of the Mustache spec.
+- [Tim](https://github.com/openpeeps/tim) - A high-performance template engine & markup language.
 
 
 ### Authentication
@@ -653,6 +680,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [godot-nim](https://github.com/pragmagic/godot-nim) - Nim bindings for Godot Engine.
 - [rod](https://github.com/yglukhov/rod) - Cross-platform 2D and 3D game engine.
 - [frag](https://github.com/Tail-Wag-Games/frag) - Cross-platform 2D/3D game engine.
+- [semicongine](https://github.com/saemideluxe/semicongine) - Cross-platform, (almost) dependency-free game engine.
 
 
 ### Rules Engines
@@ -699,6 +727,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [nimby](https://github.com/treeform/nimby) - A very simple and unofficial package manager for Nim.
 - [nifty](https://github.com/h3rald/nifty) - A decentralized pseudo package manager and script runner.
 - [nsis](https://github.com/nim-libs/nsis) - Nim programming language setup tool.
+- [nim-windows-container](https://github.com/sirredbeard/nim-windows-container) - A Windows Container with a complete Nim build environment.
 
 
 ### Logging
@@ -804,6 +833,8 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [disruptek twitch](https://www.twitch.tv/disruptek) - The live broadcast regarding Nim language.
 - [yardanico twitch](https://www.twitch.tv/yardanico) - The live broadcast regarding Nim language.
 - [zachary_carter twitch](https://www.twitch.tv/zachary_carter) - The live broadcast regarding Nim language.
+- [Nim Tutorials](https://www.youtube.com/playlist?list=PLYBJzqz8zpWaiGbFcSdlh08zlpe8Tl_Gh) - YouTube video series that teaches how to program in Nim and goes over various standared libraries.
+
 
 ---
 
