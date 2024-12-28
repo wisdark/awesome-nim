@@ -27,6 +27,8 @@
   - [Date and Time](#date-and-time)
   - [Randomization](#randomization)
   - [Scripting](#scripting)
+- [System Tools](#system-tools)
+  - [Backups](#backups)   
 - [Hardware](#hardware)
   - [Embedded](#embedded)
 - [Science](#science)
@@ -129,6 +131,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 
 ### Editors
 - [moe](https://github.com/fox0430/moe) - A vim-like editor made with Nim, also supports C, Rust, Javascript, etc.
+- [Nev](https://github.com/Nimaoth/Nev) - A keyboard focused GUI and terminal text editor.
 - [Nim Playground](https://play.nim-lang.org/) - Code and run Nim online.
 - [DoongJohn's Nim playground](https://doongjohn.github.io/nim-playground/) - An alternative implementation of the Nim playground.
 
@@ -149,6 +152,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [shared](https://github.com/genotrance/shared) - A Nim library for shared types.
 - [synthesis](https://github.com/mratsim/Synthesis) - A compiletime, procedure-based, low-overhead, no-allocation, state-machine generator optimized for communicating processes and threads.
 - [sync](https://github.com/planetis-m/sync) - Useful synchronization primitives.
+- [threadlogging](https://codeberg.org/pswilde/threadlogging) - A thread safe logging library using Nim's own logging module
 
 
 ### Error Handling
@@ -191,6 +195,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [glob](https://github.com/citycide/glob) - Pure library for matching file paths against Unix style glob patterns.
 - [ast_pattern_match](https://github.com/krux02/ast-pattern-matching) - A library to do pattern matching on the AST.
 - [awk](https://github.com/greencardamom/awk) - A library of awk functions in Nim.
+- [tinyre](https://github.com/khchen/tinyre) - A tiny regex engine based on Rob Pike's VM implementation.
 
 
 ### Iteration
@@ -259,6 +264,13 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [nimr](https://github.com/Jeff-Ciesielski/nimr) - Run Nim programs like scripts.
 
 
+## System Tools
+
+### Backups
+
+- [norg](https://codeberg.org/pswilde/norgbackup) - A portable wrapper for borg and restic.
+
+ 
 ## Hardware
 
 - [nimvisa](https://github.com/leeooox/nimvisa) - Wrapper for NI-VISA instrument control library.
@@ -282,6 +294,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [unchained](https://github.com/SciNim/Unchained) - A fully type safe, compile time only units library.
 - [metric](https://github.com/mjendrusch/metric) - A small library providing type-level dimensional analysis.
 - [orbits](https://github.com/treeform/orbits) - Orbital mechanics library for Nim.
+- [qex](https://github.com/jcosborn/qex) - High-level framework for lattice field operations.
 
 ## Data
 
@@ -387,7 +400,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [omni](https://github.com/vitreo12/omni) - A DSL for low-level audio programming.
 - [wave](https://github.com/jiro4989/wave) - A tiny WAV sound module.
 - [parasound](https://github.com/paranim/parasound) - A library to provide Nim bindings for miniaudio and dr_wav.
-- [jacket](https://github.com/SpotlightKid/jacket) - A Nim wrapper for the libjack C library to write clients for the JACK audio server. 
+- [jacket](https://github.com/SpotlightKid/jacket) - A Nim wrapper for the libjack C library to write clients for the JACK audio server.
 
 
 ### Images
@@ -449,10 +462,12 @@ Nim provides unique features for seamless and transparent interoperability with 
 ### Cryptography
 
 - [nimcrypto](https://github.com/cheatfate/nimcrypto) - Nim cryptographic library.
+- [hashlib](https://github.com/khchen/hashlib) - Hash library that contains almost all the hash functions for Nim.
 - [nimaes](https://github.com/jangko/nimAES) - Advanced Encryption Standard, Rinjdael Algorithm written in Nim.
 - [constantine](https://github.com/mratsim/constantine) - Constant time pairing-based of elliptic curve based cryptography and digital signatures.
 - [bslcurve](https://github.com/status-im/nim-blscurve) - Nim implementation of BLS signature scheme (Boneh-Lynn-Shacham) over Barreto-Lynn-Scott (BLS) curve BLS12-381.
 - [bncurve](https://github.com/status-im/nim-bncurve) - Nim implementation of Barreto-Naehrig pairing-friendly elliptic curve.
+- [xxhash.nim](https://github.com/OpenSystemsLab/xxhash.nim) - A wrapper for the xxhash hashing library in Nim.
 - [xxtea](https://github.com/xxtea/xxtea-nim) - XXTEA encryption algorithm library.
 - [crc32](https://github.com/juancarlospaco/nim-crc32) - CRC32 for Nim. Just pass the thing you want to do CRC.
 - [rollinghash](https://github.com/MarcAzar/RollingHash) - High performance Nim implementation of a Cyclic Polynomial Hash, aka BuzHash, and the Rabin-Karp algorithm.
@@ -497,6 +512,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [chroma](https://github.com/treeform/chroma) - Everything you want to do with colors, in Nim.
 - [typography](https://github.com/treeform/typography) - Fonts, typesetting and rasterization.
 - [trick](https://github.com/exelotl/trick) - Library for GBA/NDS image conversion, and more!
+- [HexToAnsi](https://github.com/farias-hecdin/HexToAnsi/blob/main/src/nim/README.md) - Convert hexadecimal colors to ANSI colors.
 
 
 ### GUI
@@ -600,7 +616,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 
 #### Multicast
 
-- [nimMulticast](https://github.com/enthus1ast/nimMulticast) - UDP Multicast made simple. 
+- [nimMulticast](https://github.com/enthus1ast/nimMulticast) - UDP Multicast made simple.
 
 
 ### HTML Parsers
@@ -634,11 +650,12 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [starlight](https://github.com/planety/starlight) - Flask-like web framework written in Nim.
 - [rosencrantz](https://github.com/andreaferretti/rosencrantz) - DSL to write web servers, inspired by Spray and its successor Akka HTTP.
 - [nim_websitecreator](https://github.com/ThomasTJdev/nim_websitecreator) - Nim fullstack website framework - deploy a website within minutes.
+- [nim-palladian](https://github.com/itsumura-h/nim-palladian) - Palladian is a Nim front-end framework based on and wrapped around Preact.
 
 
 ### Template Engines
 
-- [Nim Source Code filters](https://nim-lang.org/docs/filters.html) - Nim's powerful built-in feature which can be used as a templating system or a preprocessor. 
+- [Nim Source Code filters](https://nim-lang.org/docs/filters.html) - Nim's powerful built-in feature which can be used as a templating system or a preprocessor.
 - [smalte](https://github.com/roquie/smalte) - It is a dead simple and lightweight template engine. Specially designed for configure application before start in Docker.
 - [html-dsl](https://github.com/juancarlospaco/nim-html-dsl) - Nim HTML DSL.
 - [templates](https://github.com/onionhammer/nim-templates) - A simple string templating library for Nim.
@@ -681,6 +698,8 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [rod](https://github.com/yglukhov/rod) - Cross-platform 2D and 3D game engine.
 - [frag](https://github.com/Tail-Wag-Games/frag) - Cross-platform 2D/3D game engine.
 - [semicongine](https://github.com/saemideluxe/semicongine) - Cross-platform, (almost) dependency-free game engine.
+- [saohime](https://github.com/glassesneo/saohime) - An extensible 2D game engine for Nim, inspired by Bevy Engine.
+- [alasgar](https://github.com/abisxir/alasgar) - Pure nim 3D game engine based on OpenGL.
 
 
 ### Rules Engines
@@ -769,7 +788,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [cliche](https://github.com/juancarlospaco/cliche) - AutoMagic CLI argument parsing is so cliché.
 - [loki](https://github.com/beshrkayali/loki) - A small library for writing line-oriented command interpreters in Nim.
 - [confutils](https://github.com/status-im/nim-confutils) - Simplified handling of command line options and config files
-
+- [Cmdos](https://github.com/farias-hecdin/Cmdos) - A simple way to process cli arguments and help messages.
 
 ## Resources
 
@@ -817,7 +836,7 @@ Nim provides unique features for seamless and transparent interoperability with 
 - [Nim Memory](http://zevv.nl/nim-memory/) - A small tutorial explaining how Nim stores data in memory.
 - [Nim ARC](http://zevv.nl/nim-memory/nim-arc.html) - A friendly explanation of ARC and its implications for the programmer.
 - [nimNx](https://github.com/dkgitdev/nimNx) - A Nintendo Switch Homebrew example project, written in Nim.
-- [nimNxStatic](https://github.com/dkgitdev/nimNxStatic) - A static library example aiming to help integrate Nim code into the current Homebrew C projects for Nintendo Switch 
+- [nimNxStatic](https://github.com/dkgitdev/nimNxStatic) - A static library example aiming to help integrate Nim code into the current Homebrew C projects for Nintendo Switch
 
 
 ### Videos
